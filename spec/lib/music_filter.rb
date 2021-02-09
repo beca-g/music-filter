@@ -6,6 +6,7 @@ class Music_Filter
   end
 
   def filter(sound_wave, min_freq, max_freq)
+    is_empty?(sound_wave)
     filter_function(sound_wave, min_freq, max_freq)
   end 
 
@@ -22,5 +23,9 @@ class Music_Filter
       end
     end
     new_sound_wave
+  end
+
+  def is_empty?(sound_wave)
+    raise "Error: No frequencies supplied" if sound_wave == []
   end
 end
