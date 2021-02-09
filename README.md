@@ -8,7 +8,9 @@ The filter has a default minimum and maximum freqency:
 - MAX_DEFAULT = 1000 
 Users have the ability to change the min/max freqencies.
 
-Example inout/output:
+Example inout/output:  
+
+Given an array of frequencies the filter will raise and/or lower the maximum and minimum allowed freqencies.
 
 INPUT               | OUTPUT
 --------------------|-----------------
