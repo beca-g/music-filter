@@ -8,8 +8,13 @@ describe Music_Filter do
       expect(sound_wave).to eq [40,100,1000] 
     end
 
-    it "should modify the sound wave with the min frequancy is not met" do 
+    it "should modify the sound wave when the min frequancy is not met" do 
       sound_wave = music_filter.filter([10,100,1000],40,1000)
+      expect(sound_wave).to eq [40,100,1000] 
+    end
+
+    it "should modify the sound way when the max frequancy is not met" do 
+      sound_wave = music_filter.filter([40,100,1050],40,1000)
       expect(sound_wave).to eq [40,100,1000] 
     end
   end

@@ -5,6 +5,8 @@ class Music_Filter
     sound_wave.each do |freq|
       if freq < min_freq
         new_sound_wave << min_freq
+      elsif freq > max_freq
+        new_sound_wave << max_freq
       else
         new_sound_wave << freq
       end
