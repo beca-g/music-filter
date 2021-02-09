@@ -26,6 +26,6 @@ class Music_Filter
   end
 
   def is_empty?(sound_wave)
-    raise "Error: No frequencies supplied" if sound_wave == []
+    raise "Error: No frequencies supplied" if sound_wave.empty?
   end
 end

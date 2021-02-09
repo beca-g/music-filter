@@ -24,7 +24,7 @@ describe Music_Filter do
     end
 
     it "should raise an error if no frequencies are given" do 
-      expect { subject.filter([], 40, 100) }.to raise_error("Error: No frequencies supplied")
+      expect { music_filter.filter([], 40, 100) }.to raise_error("Error: No frequencies supplied")
     end
   end
 end
