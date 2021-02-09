@@ -22,5 +22,9 @@ describe Music_Filter do
       sound_wave = music_filter.filter([10,100,1050],40,1000)
       expect(sound_wave).to eq [40,100,1000] 
     end
+
+    it "should raise an error if no frequancies are given" do 
+      expect { subject.filter([], 40, 100) }.to raise_error("Error: No frequencies supplied")
+    end
   end
 end
